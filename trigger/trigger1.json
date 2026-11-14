@@ -1,0 +1,24 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/project/blobs/ingest/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/c2995b3f-e5bd-4464-9d42-f7a0422da3d4/resourceGroups/databricks_res/providers/Microsoft.Storage/storageAccounts/azureprojectpankaj",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
