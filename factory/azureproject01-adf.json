@@ -1,0 +1,18 @@
+{
+	"name": "azureproject01-adf",
+	"properties": {
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "false"
+		},
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6c65e8a8-6d9c-486c-9892-b19daa945b29",
+		"tenantId": "0ada04e4-8774-4413-b771-7575eaffed2e"
+	}
+}
